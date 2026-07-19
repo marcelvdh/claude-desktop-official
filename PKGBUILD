@@ -1,7 +1,7 @@
 # Maintainer: marcelvdh <marcelvdh@linux.com>
 
 pkgname=claude-desktop-official
-pkgver=1.20186.9
+pkgver=1.22209.3
 pkgrel=1
 pkgdesc="Claude Desktop Client (Stable Release Channel)"
 arch=('x86_64')
@@ -46,7 +46,7 @@ options=('!emptydirs' '!strip')
 _channel=stable
 
 source=("https://downloads.claude.ai/claude-desktop/apt/${_channel}/pool/main/c/claude-desktop/claude-desktop_${pkgver}_amd64.deb")
-sha512sums=('f207db3b0c1362f0e25fddd972ca4e988bded0b8713121ca8593794fb445ac0109b0aff4675fa148707fd57f2445f042b62ff8bf8873ed083973acf70c67323a')
+sha512sums=('7dc8d32188447d2f9cb4914d0416b29bf89ce351f8f1828baf6b72fbec52211ed0760a5752ab60db14e781f80431a6d41075bfb2d14114d20c10b61973fedda0')
 
 package() {
 	bsdtar -xf "$srcdir/claude-desktop_${pkgver}_amd64.deb" -C "$srcdir"
